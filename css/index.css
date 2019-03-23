@@ -179,12 +179,14 @@ nav {
   flex-direction: column;
   border-bottom: 1px solid #F1F1F1;
   background-color: #F6F6F6;
+  padding-top: 15px;
 }
 nav #top-links {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 nav #top-links a {
   text-decoration: none;
@@ -194,10 +196,10 @@ nav #top-links a {
   font-size: 1.6rem;
 }
 nav #top-links a:first-of-type {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 nav #top-links a:last-of-type {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 footer {
   color: #22283B;
@@ -220,6 +222,11 @@ footer {
   width: 100%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .home .intro #top-image img {
+    border-radius: 4px;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -230,6 +237,17 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -279,4 +297,42 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .home .walk .btn,
+  .home .walk .walk-text {
+    order: 1;
+  }
+  .home .walk .walk-img,
+  .home .walk .walk-text,
+  .home .walk .btn {
+    width: 100%;
+    margin: 0;
+  }
+  .home .walk .walk-text .btn {
+    background-color: #222839;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 0.6rem;
+    border-radius: 8px;
+    padding-top: 2.5rem;
+    border-radius: 4px;
+  }
+  .home .walk .walk-text .btn:hover {
+    color: #222839;
+    background-color: white;
+    border: 1px solid #222839;
+  }
 }
