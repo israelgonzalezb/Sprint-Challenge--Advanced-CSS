@@ -336,3 +336,22 @@ footer {
     border: 1px solid #222839;
   }
 }
+#mars img {
+  width: 100%;
+  border-radius: 10px;
+}
+#contact {
+  text-align: center;
+}
+#contact div #name,
+#contact div #subject,
+#contact div #message {
+  max-width: 800px;
+  width: 100%;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 8px;
+  border-width: 0;
+  border-color: #F1F1F1;
+  box-shadow: 2px 2px 5px #22283B;
+}
