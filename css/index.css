@@ -135,6 +135,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@keyframes blast-off {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 150%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -180,6 +188,9 @@ nav {
   border-bottom: 1px solid #F1F1F1;
   background-color: #F6F6F6;
   padding-top: 15px;
+  position: fixed;
+  width: 100%;
+  opacity: 0.5;
 }
 nav #top-links {
   display: flex;
@@ -200,6 +211,20 @@ nav #top-links a:first-of-type {
 }
 nav #top-links a:last-of-type {
   margin-right: 0px;
+}
+nav #rocket-icon {
+  left: 0;
+  font-size: 4rem;
+}
+nav #rocket-icon i {
+  right: 0;
+  transition-property: right;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+nav #rocket-icon i:hover {
+  right: 1px;
 }
 footer {
   color: #22283B;
@@ -341,6 +366,7 @@ footer {
   border-radius: 10px;
 }
 #contact {
+  margin-bottom: 20px;
   text-align: center;
 }
 #contact div #name,

@@ -6,6 +6,9 @@ nav {
   border-bottom: 1px solid @highlight-color;
   background-color: @highlight-bg;
   padding-top: 15px;
+  position: fixed;
+  width: 100%;
+  opacity: 0.5;
   #top-links {
     .flex-center;
     margin-top: 25px;
@@ -26,6 +29,21 @@ nav {
       }
 
     }
+  }
+  #rocket-icon {
+    left: 0;
+    font-size: 4rem;
+    i{
+    right: 0;
+    transition-property: right;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    }
+    i:hover {
+      right: 1px;
+    }
+    
   }
 }
 
