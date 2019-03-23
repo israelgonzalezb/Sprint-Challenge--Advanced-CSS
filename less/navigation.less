@@ -31,18 +31,20 @@ nav {
     }
   }
   #rocket-icon {
+    i {
+    @keyframes run {
+    0% { left: 0;}
+    50%{ left : 100%;}
+    100%{ left: 0;}
+}
     left: 0;
     font-size: 4rem;
-    i{
-    right: 0;
-    transition-property: right;
-    transition-duration: 5s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+    position:absolute;
+    animation:linear infinite alternate;
+    animation-name: run;
+    animation-duration: 5s;
     }
-    i:hover {
-      right: 1px;
-    }
+
     
   }
 }
