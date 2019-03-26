@@ -33,14 +33,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+  
+  - An adaptive website is made up media queries that change the layout of the page as different-sized displays access the site. A fully responsive site changes at all sizes, and usually uses responsive units, percentages and flexbox to make sure the page responds to the size of the viewport.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+   - Mobile first is the strategy of designing and building a website with mobile screens in mind, and changing the layout from there to look good on desktops. Desktop first is the opposite, where a designer or coder starts with a desktop user in mind, then tries to change the site to be useable on a smaller screen.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+   - Rem's are responsive units that inherit the font-size of the html element. We use 62.5% to make the font-size about 10px. This makes it easier to calculate font-sizes using rem's, i.e. 2 rem's would be equal to 20px.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+   - Preprocessors make it easier for a coder to create stylesheets for a website. It allows thme to reuse different parts of their code, and nest elemnt styles within each other.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+   - My favorite concept is mixins because it is a lot like regular programming. The concept I have the most touble with is figuring out the best way to organize code when nesting element styles.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
