@@ -1,1 +1,51 @@
 // Navigation code here
+
+nav {
+  .flex-center;
+  flex-direction: column;
+  border-bottom: 1px solid @highlight-color;
+  background-color: @highlight-bg;
+  padding-top: 15px;
+  position: fixed;
+  width: 100%;
+  opacity: 0.5;
+  #top-links {
+    .flex-center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      margin-left: 16px;
+      margin-right: 16px;
+      font-size: 1.6rem;
+      &:first-of-type {
+        margin-left: 0px;
+      }
+      &:last-of-type {
+        margin-right: 0px;
+      }
+
+    }
+  }
+  #rocket-icon {
+    i {
+    @keyframes run {
+    0% { left: 0;}
+    50%{ left : 100%;}
+    100%{ left: 0;}
+}
+    left: 0;
+    font-size: 4rem;
+    position:absolute;
+    animation:linear infinite alternate;
+    animation-name: run;
+    animation-duration: 5s;
+    }
+
+    
+  }
+}
+
